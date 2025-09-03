@@ -97,6 +97,9 @@ async function Scan(gitleaksEnableUploadArtifact, scanInfo, eventType) {
     } else {
       args = [
         "detect",
+        "--source=.",
+        "--no-git",
+        "--verbose",
         "--redact",
         "-v",
         "--exit-code=2",
